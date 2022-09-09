@@ -1,0 +1,41 @@
+{
+    "name": "grizz-it/micro-router",
+    "keywords": [
+        "routing"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "grizz-it/micro-service": "^1.0",
+        "symfony/routing": "^6.1",
+        "symfony/http-foundation": "^6.1",
+        "symfony/yaml": "^6.1",
+        "symfony/config": "^6.1"
+    },
+    "authors": [
+        {
+            "name": "GrizzIT",
+            "homepage": "https://www.grizzit.com/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GrizzIt\\MicroRouter\\": "src/"
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
+    },
+    "archive": {
+        "exclude": [
+            "/tests",
+            "/.gitignore",
+            "/phpunit.xml"
+        ]
+    }
+}
